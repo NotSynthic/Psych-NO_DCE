@@ -1,26 +1,30 @@
 package;
 
-#if macro
-import haxe.macro.Context;
-import haxe.macro.Compiler;
-import haxe.macro.Expr;
+// FLIXEL
+import flixel.util.*;
+import flixel.ui.*;
+import flixel.tweens.*;
+import flixel.tile.*;
+import flixel.text.*;
+import flixel.system.*;
+import flixel.sound.*;
+import flixel.path.*;
+import flixel.math.*;
+import flixel.input.*;
+import flixel.group.*;
+import flixel.graphics.*;
+import flixel.effects.*;
+import flixel.animation.*;
 
-/**
- * Macros containing additional help functions to expand HScript capabilities.
- */
-class ScriptsMacro {
-	public static function addAdditionalClasses() {
-		for(inc in [
-			// FLIXEL
-			"flixel.util", "flixel.ui", "flixel.tweens", "flixel.tile", "flixel.text",
-			"flixel.system", "flixel.sound", "flixel.path", "flixel.math", "flixel.input",
-			"flixel.group", "flixel.graphics", "flixel.effects", "flixel.animation",
-			// FLIXEL ADDONS
-			"flixel.addons.api", "flixel.addons.display", "flixel.addons.effects", "flixel.addons.ui",
-			"flixel.addons.plugin", "flixel.addons.text", "flixel.addons.tile", "flixel.addons.transition",
-			"flixel.addons.util"
-		])
-			Compiler.include(inc);
-	}
-}
-#end
+// FLIXEL ADDONS
+import flixel.addons.api.*;
+import flixel.addons.display.*;
+import flixel.addons.effects.*;
+import flixel.addons.ui.*;
+import flixel.addons.plugin.*;
+import flixel.addons.text.*;
+import flixel.addons.tile.*;
+import flixel.addons.transition.*;
+import flixel.addons.util.*;
+
+using StringTools;
