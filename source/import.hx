@@ -29,31 +29,21 @@ import states.PlayState;
 import states.LoadingState;
 
 //Flixel
-import flixel.util.*;
-import flixel.ui.*;
-import flixel.tweens.*;
-import flixel.tile.*;
-import flixel.text.*;
-import flixel.system.*;
-import flixel.sound.*;
-import flixel.path.*;
-import flixel.math.*;
-import flixel.input.*;
-import flixel.group.*;
-import flixel.graphics.*;
-import flixel.effects.*;
-import flixel.animation.*;
-import flixel.*;
-
-//Flixel Addons
-import flixel.addons.api.*;
-import flixel.addons.display.*;
-import flixel.addons.effects.*;
-import flixel.addons.ui.*;
-import flixel.addons.plugin.*;
-import flixel.addons.text.*;
-import flixel.addons.tile.*;
-import flixel.addons.transition.*;
-import flixel.addons.util.*;
+#if (flixel >= "5.3.0")
+import flixel.sound.FlxSound;
+#else
+import flixel.system.FlxSound;
+#end
+import flixel.FlxG;
+import flixel.FlxSprite;
+import flixel.FlxCamera;
+import flixel.math.FlxMath;
+import flixel.util.FlxColor;
+import flixel.util.FlxTimer;
+import flixel.text.FlxText;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
+import flixel.group.FlxSpriteGroup;
+import flixel.group.FlxGroup.FlxTypedGroup;
 
 using StringTools;
